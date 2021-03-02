@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Zahlen raten</title>
+    
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <header>
+        <a href="../index.html"><h1>Mikeys Game Corner</h1></a>
+        <nav>
+            <ul>
+                <li><a href="../Javascript Handyweitwurf/index.html">Handy Weitwurf</a></li>
+                <li><a href="../Javascript Schere, Stein, Papier/index.html">Schere-Stein-Papier</a></li>
+                <li><a href="../Javascript CodeBreaker/index.html">CodeBreaker</a></li>
+                <li><a href="index.html">Zahlenraten</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <body>
+        <h2>Zahlen Raten</h2>
+
+        <div id="startPopup">               
+            <p>Wie hoch soll die Zahl sein (1-999)</p>
+            <input id="maxnumber" type="number"></input>
+            <p>Wie oft möchtest Du versuchen</p>
+            <input id="gamecountinput" type="number"></input>
+            <div class="button" onclick="play()">Lets Play !</div>        
+        </div>
+        
+        <p id="instruct"></p>
+        <p id="showcounter"></p>
+        <p id="showresult"></p>
+        		
+		<div>
+			<label>Dein Tipp:</label>
+			<input id="yourguess" type="number" placeholder="Dein Tipp"/>
+			<div class="button" onclick="checkNumber()">Raten</div>			
+        </div>
+        
+        <div id="popupwin" onclick="closePopup()"></div>
+        <div id="popuplose" onclick="closePopup()"></div>
+                            
+        <script type="text/Javascript" src="js/script.js"></script>
+    </body>
+
+</html>
+    

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Handyweitwurf</title>
+    
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <header>
+        <a href="../index.html"><h1>Mikeys Game Corner</h1></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Handy Weitwurf</a></li>
+                <li><a href="../Javascript Schere, Stein, Papier/index.html">Schere-Stein-Papier</a></li>
+                <li><a href="../Javascript CodeBreaker/index.html">CodeBreaker</a></li>
+                <li><a href="../Javascript Zahlenraten/index.html">Zahlenraten</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <div>
+            <h2>Handyweitwurf</h2>
+        </div>
+
+        <div id="gamecount">
+            <div>
+                <p>Wähle einen Planeten aus und versuche das Monster zu treffen.</p>
+                <select id="planet">
+                    <option value=9.81 name="Erde">Erde</option>
+                    <option value=1.62 name="Mond">Mond</option>
+                    <option value=3.69 name="Mars">Mars</option>
+                    <option value=24.79 name="Jupiter">Jupiter</option>
+                </select>
+            </div>        
+            <p>Wie oft möchtest du Spielen ?</p>
+            <input id="gamecountinput" type="number"></input>
+            <div id = pselect></div>
+            <div class="button" onclick="play()">Lets Play !</div>        
+        </div>
+                    
+        <div id="showplanet"></div>
+        <div id="showdist"></div>
+        <div id="showthrow"></div>
+        <div id="trycounter"></div>
+        
+        <div>
+            <label><input id="v0" name="v0" type="number" placeholder="Wurfstärke">Kraft</label>
+            <label><input id="angle" name="angle" type="number" placeholder="Wurfwinkel">Grad</label>
+        </div>
+        
+        <div class="button" onclick="shoot()">Handy Werfen</div>
+    
+        <div id="popupwin" onclick="closePopup()"></div> 
+        <div id="popuplose" onclick="closePopup()"></div>   
+
+        <script type="text/Javascript" src="js/script.js"></script>
+    </body>
+
+</html>
+    
+    

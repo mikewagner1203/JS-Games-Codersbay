@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>CodeBreaker</title>
+    
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <header>
+        <a href="../index.html"><h1>Mikeys Game Corner</h1></a>
+        <nav>
+            <ul>
+                <li><a href="../Javascript Handyweitwurf/index.html">Handy Weitwurf</a></li>
+                <li><a href="../Javascript Schere, Stein, Papier/index.html">Schere-Stein-Papier</a></li>
+                <li><a href="index.html">CodeBreaker</a></li>
+                <li><a href="../Javascript Zahlenraten/index.html">Zahlenraten</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <body>
+        <h2>CodeBreaker</h2>
+        <div id="startPopup">  
+            <p>Du bist Geheimagent und musst den Code zwischen 111 und 999 knacken um die Welt zu retten !</p>
+            <p>Gib die Zahlen 1-9 in die jeweiligen Felder ein um den Code zu knacken.</p>
+            <p>Dein Hacktool hilft dir dabei.</p>         
+            <div class="button" onclick="play()">Lets Play !</div>        
+        </div>
+        
+        <div id="hacktool">
+            <p>Hacktool Gebrauchsanleitung:</p>
+            <p>ROT = Zahl nicht im Code.</p>
+            <p>GELB = Zahl an der falschen Stelle.</p>
+            <P>GRÜN = Zahl richtig.</P>
+        </div>        
+        
+        <div id="gamecounter">Du hast 12 Versuche.</div>
+        
+        <div id="playerinput">
+            <div>
+                <div id="helper">
+                    <div id="helper1"></div>
+                    <div id="helper2"></div>
+                    <div id="helper3"></div>
+                </div>
+                <input id="playernumber1" type="number" placeholder="#1"/>
+                <input id="playernumber2" type="number" placeholder="#2"/>
+                <input id="playernumber3" type="number" placeholder="#3"/>
+            </div>
+        </div>
+        
+        <div class="button" onclick="checkNumbers()">Knack den Code</div>
+                
+        <div id="popupwin" onclick="closePopup()"></div>
+        <div id="popuplose" onclick="closePopup()"></div>
+        
+        <script type="text/Javascript" src="js/script.js"></script>
+        
+    </body>            
+</html>
+            

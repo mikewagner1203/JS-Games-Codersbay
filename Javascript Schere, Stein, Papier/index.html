@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Schere - Stein - Papier</title>
+        
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <header>
+        <a href="../index.html"><h1>Mikeys Game Corner</h1></a>
+        <nav>
+            <ul>
+                <li><a href="../Javascript Handyweitwurf/index.html">Handy Weitwurf</a></li>
+                <li><a href="index.html">Schere-Stein-Papier</a></li>
+                <li><a href="../Javascript CodeBreaker/index.html">CodeBreaker</a></li>
+                <li><a href="../Javascript Zahlenraten/index.html">Zahlenraten</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <div>
+            <h2>Schere - Stein - Papier</h1>
+        </div>
+
+        <div id="startPopup">               
+            <p>Wie viele Siege um zu gewinnen ?</p>
+            <input id="gamecountinput" type="number"></input>
+            <div class="button" onclick="play()">Lets Play !</div>        
+        </div>
+
+        <div>
+            <p>Tritt gegen den Computer an.</p>
+            <p>Wähle Schere, Stein oder Papier.</p>
+            <p id="wins"></p>
+        </div>
+        
+        <div class="game">
+            <div class="button" id="schere" onclick="choose(1)">Schere</div>
+            <div class="button" id="stein" onclick="choose(2)">Stein</div>
+            <div class="button" id="papier" onclick="choose(3)">Papier</div>            
+        </div>
+        
+        <div id="description">
+            <p>Schere schlägt Papier</p>
+            <p>Stein schlägt Schere</p>
+            <p>Papier schlägt Stein</p>
+        </div>
+        <div id="score">
+            <div id="result"></div>
+            <div id="resultvs"></div>
+            
+            <div id="wincpu">Computer Siege:</div>
+            <div id= "winplayer">Spieler Siege:</div>
+        </div>
+            
+            <div id="popupwin" onclick="closePopup()"></div>
+            <div id="popuplose" onclick="closePopup()"></div>
+        
+        <script type="text/Javascript" src="js/script.js"></script>
+    </body>
+</html>
+    
+        
